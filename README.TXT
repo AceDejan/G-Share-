@@ -2,31 +2,20 @@
 BUILD OUTPUT DESCRIPTION
 ========================
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
 
-To run the project from the command line, go to the dist folder and
-type the following:
+1.) Install Java on your computer if it isn't installed. 
 
-java -jar "G-Share.jar" 
+You can't run JAR files without Java installed on your computer. If you don't already have Java installed, go to Java's website at https://www.java.com/en/download/ and click the Free Java Download button below the latest version of Java, then install Java once it downloads.
+You may have to restart your computer for Java to be fully implemented.
 
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
+2.) Now Click "G-Share.jar" 
 
 Notes:
 
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+*JAR stands for Java ARchive. 
+It's a file format based on the popular ZIP file format and is used for aggregating many files into one.
+
+*Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components (.class files, images and sounds) can be downloaded to a browser in a single HTTP transaction, rather than opening a new connection for each piece. 
+This greatly improves the speed with which an applet can be loaded onto a web page and begin functioning. The JAR format also supports compression, which reduces the size of the file and improves download time still further.
+
+*On Microsoft Windows systems, the Java 2 Runtime Environment's installation program will register a default association for JAR files so that double-clicking a JAR file on the desktop will automatically run it with javaw -jar. Dependent extensions bundled with the application will also be loaded automatically. This feature makes the end-user runtime environment easier to use on Microsoft Windows systems.
